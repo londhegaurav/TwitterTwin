@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/rlfollow"
+    android:clickable="true">
+
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/ivProfileImageFollow"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:onClick="goToProfile"
+        android:padding="5dp"/>
+    <TextView
+        android:id="@+id/tvUsernameFollow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/ivProfileImageFollow"
+        android:layout_alignTop="@id/ivProfileImageFollow"
+        android:paddingTop="5dp"
+        />
+    <TextView
+        android:id="@+id/tvScreenNameFollow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/ivProfileImageFollow"
+        android:layout_below="@id/tvUsernameFollow"
+        android:layout_marginTop="8dp"
+        android:minHeight="50dp"
+        android:paddingBottom="10dp"
+      />
+    <!--<ImageView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/ivMedia"-->
+        <!--android:layout_below="@id/tvTweet"-->
+        <!--android:paddingLeft="50dp"-->
+        <!--android:paddingRight="20dp"-->
+        <!--/>-->
+    <!--<LinearLayout-->
+        <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:layout_width="match_parent" android:layout_height="match_parent"-->
+        <!--android:id="@+id/ll"-->
+        <!--android:clickable="true"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:paddingLeft="20dp"-->
+        <!--android:paddingBottom="10dp"-->
+        <!--android:layout_below="@id/ivMedia"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!-->-->
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/ivPostTweet"-->
+            <!--android:src="@drawable/tweet"-->
+
+            <!--/>-->
+        <!--<ImageButton-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/ivretweet"-->
+            <!--android:src="@drawable/retweetgray"-->
+            <!--android:layout_marginLeft="100dp"-->
+            <!--android:background="@android:color/transparent"-->
+        <!--/>-->
+        <!--<TextView-->
+            <!--android:id="@+id/tvreTweet"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--/>-->
+        <!--<ImageButton-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/ivstar"-->
+            <!--android:src="@drawable/starnocolor"-->
+            <!--android:layout_marginLeft="100dp"-->
+            <!--android:background="@android:color/transparent"-->
+            <!--android:state_selected="false"-->
+            <!--/>-->
+        <!--<TextView-->
+            <!--android:id="@+id/tvStar"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:state_selected="false"-->
+            <!--/>-->
+        <!--</LinearLayout>-->
+ <!-- -->
+
+</RelativeLayout><!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/src/main/res/layout/follow_items.xml -->
