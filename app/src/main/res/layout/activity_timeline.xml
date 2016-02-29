@@ -1,3 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!-- Toolbar -->
+        <include layout="@layout/toolbar" />
+
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,23 +23,24 @@
     android:background="@color/white"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:custom="http://schemas.android.com/apk/res-auto"
-    tools:context="com.codepath.apps.mysimpletweets.activity.TimeLineActivity">
+    tools:context="com.codepath.apps.mysimpletweets.activity.TimeLineActivity"
+    >
 
-    <com.daimajia.numberprogressbar.NumberProgressBar
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <!--<com.daimajia.numberprogressbar.NumberProgressBar-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
 
-        custom:progress_unreached_color="#CCCCCC"
-        custom:progress_reached_color="#3498DB"
+        <!--custom:progress_unreached_color="#CCCCCC"-->
+        <!--custom:progress_reached_color="#3498DB"-->
 
-        custom:progress_unreached_bar_height="0.75dp"
-        custom:progress_reached_bar_height="1.5dp"
+        <!--custom:progress_unreached_bar_height="0.75dp"-->
+        <!--custom:progress_reached_bar_height="1.5dp"-->
 
-        custom:progress_text_size="10sp"
-        custom:progress_text_color="#3498DB"
-        custom:progress_text_offset="1dp"
-        custom:progress_text_visibility="visible"
-        />
+        <!--custom:progress_text_size="10sp"-->
+        <!--custom:progress_text_color="#3498DB"-->
+        <!--custom:progress_text_offset="1dp"-->
+        <!--custom:progress_text_visibility="visible"-->
+        <!--/>-->
 
     <com.astuetz.PagerSlidingTabStrip
         android:id="@+id/tabs"
@@ -45,3 +62,5 @@
         android:background="@android:color/white" />
 
 </RelativeLayout>
+</LinearLayout>
+    </android.support.design.widget.CoordinatorLayout>

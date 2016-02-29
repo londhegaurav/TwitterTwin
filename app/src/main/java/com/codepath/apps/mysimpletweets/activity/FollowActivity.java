@@ -3,6 +3,7 @@ package com.codepath.apps.mysimpletweets.activity;
 import android.os.Bundle;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 
 import com.codepath.apps.mysimpletweets.R;
 import com.codepath.apps.mysimpletweets.fragment.FollowersFragment;
@@ -15,9 +16,12 @@ public class FollowActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_follow);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setTitle("");
+        setSupportActionBar(toolbar);
 
         String screenName = getIntent().getStringExtra("screen_name");
-        if(savedInstanceState == null) {
+        if (savedInstanceState == null) {
             FollowersFragment followersFragment = FollowersFragment.newInstance(screenName);
             FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
             ft.replace(R.id.flContainerFollow, followersFragment);

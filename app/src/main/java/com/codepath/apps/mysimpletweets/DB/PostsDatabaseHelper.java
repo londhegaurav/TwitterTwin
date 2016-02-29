@@ -15,6 +15,7 @@ import java.util.ArrayList;
 
 /**
  * Created by glondhe on 2/19/16.
+ * THIS FILE NOT USED. CAN BE SAFELY DELETED.
  */
 public class PostsDatabaseHelper extends SQLiteOpenHelper {
     // Database Info

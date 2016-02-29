@@ -37,10 +37,12 @@ import butterknife.ButterKnife;
  */
 
 public abstract class TweetListsFragments extends Fragment {
-    @Bind(R.id.rvTimelineGrid) RecyclerView rvTimelineGrid;
-    @Bind(R.id.swipeContainer) SwipeRefreshLayout swipeContainer;
+    @Bind(R.id.rvTimelineGrid)
+    RecyclerView rvTimelineGrid;
+    @Bind(R.id.swipeContainer)
+    SwipeRefreshLayout swipeContainer;
 //    @Bind(R.id.ivProfileImageDetail) ImageView ivProfileImageDetail;
-
+    Context context;
     private ArrayList<Tweet> tweets = null;
     private ArrayList<Tweet> tw;
     private TweetsRecycleAdapter aTweets = null;
@@ -52,19 +54,16 @@ public abstract class TweetListsFragments extends Fragment {
     private boolean flag = false;
     private FragmentManager fm;
 
-    Context context;
-
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup parent, Bundle savedInstanceState) {
 
         this.context = getContext();
 
-
-        View v = inflater.inflate(R.layout.fragment_tweet_list,parent, false);
-        ButterKnife.bind(this,v);
+        View v = inflater.inflate(R.layout.fragment_tweet_list, parent, false);
+        ButterKnife.bind(this, v);
         rvTweets = rvTimelineGrid;
-       // rvTweets = (RecyclerView) v.findViewById(R.id.rvTimelineGrid);
+        // rvTweets = (RecyclerView) v.findViewById(R.id.rvTimelineGrid);
 
         rvTweets.setAdapter(aTweets);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity());
@@ -83,7 +82,6 @@ public abstract class TweetListsFragments extends Fragment {
             }
         });
 
-
         // Setup refresh listener which triggers new data loading
         swipeContainer.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
@@ -92,19 +90,18 @@ public abstract class TweetListsFragments extends Fragment {
                     Toast.makeText(getActivity(), "Please check your Internet connectivity.", Toast.LENGTH_LONG).show();
                     swipeContainer.setRefreshing(false);
                 } else {
-//                    actionBar.hide();
                     Log.d("DEBUG", "Calling Refresh");
                     fetchTimelineAsync();
-//                    actionBar.show();
+
                 }
             }
         });
 
         //Configure the refreshing colors
         swipeContainer.setColorSchemeResources(android.R.color.holo_blue_bright,
-        android.R.color.holo_green_light,
-        android.R.color.holo_orange_light,
-        android.R.color.holo_red_light);
+                android.R.color.holo_green_light,
+                android.R.color.holo_orange_light,
+                android.R.color.holo_red_light);
 
         return v;
     }
@@ -116,7 +113,7 @@ public abstract class TweetListsFragments extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        if(getActivity().toString().equalsIgnoreCase("TimeLineActivity")) {
+        if (getActivity().toString().equalsIgnoreCase("TimeLineActivity")) {
             Bundle b = getArguments();
             if (b != null) {
                 Log.d("DEBUG", b.size() + "");
@@ -136,32 +133,17 @@ public abstract class TweetListsFragments extends Fragment {
         super.onCreate(savedInstanceState);
         tweets = new ArrayList<>();
         fm = getActivity().getSupportFragmentManager();
-     //   actionBar = getSupportActionBar();
-     //   setActionBar();
-       // databaseHelper = PostsDatabaseHelper.getInstance(getActivity());
+
         if (!isNetworkAvailable()) {
             Toast.makeText(getActivity(), "Please check your Internet connectivity.", Toast.LENGTH_LONG).show();
             flag = true;
         }
         if (flag == true)
-            aTweets = new TweetsRecycleAdapter(getActivity(), tweets, true, fm );
+            aTweets = new TweetsRecycleAdapter(getActivity(), tweets, true, fm);
         else
             aTweets = new TweetsRecycleAdapter(getActivity(), tweets, false, fm);
 
-//        if (!isNetworkAvailable()) {
-//            Toast.makeText(getActivity(), "Please check your Internet connectivity.", Toast.LENGTH_LONG).show();
-//            flag = true;
-//        }
-//        if (flag == true)
-//            aTweets = new TweetsRecycleAdapter(getActivity(), tweets, true, fm );
-//        else
-//            aTweets = new TweetsRecycleAdapter(getActivity(), tweets, false, fm);
-        //find the recycle view
-        //rvTweets = (RecyclerView) findViewById(R.id.rvTimelineGrid);
-        //create arraylist
     }
-
-
 
     public Boolean isNetworkAvailable() {
         ConnectivityManager connectivityManager
@@ -170,43 +152,22 @@ public abstract class TweetListsFragments extends Fragment {
         return activeNetworkInfo != null && activeNetworkInfo.isConnected();
     }
 
-//    @Override
-//    public void onFiltersSave(Tweet tweet) {
-//        Log.i("DEBUG body", tweet.body);
-//
-//
-//        addFirst(tweet);
-//        //    homeTimeLineFragment.addFirst(tweet);
-//        Log.i("DEBUG", "beforefromjson");
-//
-//        //Toast.makeText(this, "new tweet" + this.tweetText, Toast.LENGTH_LONG).show();
-//    }
-
-
-
-    public void addAll(ArrayList<Tweet> twnt){
-        Log.i("DEBUG bodyall", String.valueOf(aTweets.getItemCount()));
+    public void addAll(ArrayList<Tweet> twnt) {
         tweets.addAll(twnt);
         aTweets.notifyItemInserted(aTweets.getItemCount() - 1);
         aTweets.notifyDataSetChanged();
     }
 
-    public void clearAll(){
+    public void clearAll() {
         aTweets.clearData();
     }
 
-    public void addFirst(Tweet tweet){
+    public void addFirst(Tweet tweet) {
 
-       // Log.i("DEBUG Tweet", String.valueOf(tweets.indexOf(0)));
-//        Log.i("DEBUG jsonstring", json.toString());
-//        Tweet tweet = Tweet.fromJson(json);
-     //   tweets = new ArrayList<>();
-       Log.i("DEBUG body2", tweet.body);
-//        aTweets.onViewAttachedToWindow().insert()
         try {
             tweets.add(0, tweet);
-        }catch (Exception e){
-            Log.d(getClass().toString(),e.toString());
+        } catch (Exception e) {
+            Log.d(getClass().toString(), e.toString());
         }
 
         aTweets.notifyItemInserted(aTweets.getItemCount() - 1);

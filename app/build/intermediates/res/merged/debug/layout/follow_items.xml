@@ -31,6 +31,23 @@
         android:minHeight="50dp"
         android:paddingBottom="10dp"
       />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivstar"
+        android:src="@drawable/follow"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="10dp"
+        android:state_selected="false"
+        android:background="@android:color/transparent"
+        />
+    <View
+        android:id="@+id/vwLine"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@android:color/darker_gray"
+        android:layout_alignParentBottom="true"/>
+
     <!--<ImageView-->
         <!--android:layout_width="match_parent"-->
         <!--android:layout_height="wrap_content"-->
@@ -88,4 +105,4 @@
         <!--</LinearLayout>-->
  <!-- -->
 
-</RelativeLayout><!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/src/main/res/layout/follow_items.xml -->
+</RelativeLayout><!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/src/main/res/layout/follow_items.xml -->

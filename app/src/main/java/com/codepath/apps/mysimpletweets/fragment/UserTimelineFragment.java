@@ -18,8 +18,16 @@ import org.json.JSONObject;
 /**
  * Created by glondhe on 2/24/16.
  */
-public class UserTimelineFragment extends TweetListsFragments{
+public class UserTimelineFragment extends TweetListsFragments {
     private TwitterClient client;
+
+    public static UserTimelineFragment newInstance(String screen_name) {
+        UserTimelineFragment userTimelineFragment = new UserTimelineFragment();
+        Bundle args = new Bundle();
+        args.putString("screen_name", screen_name);
+        userTimelineFragment.setArguments(args);
+        return userTimelineFragment;
+    }
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -30,14 +38,6 @@ public class UserTimelineFragment extends TweetListsFragments{
         }
     }
 
-
-    public  static UserTimelineFragment newInstance(String screen_name ){
-        UserTimelineFragment userTimelineFragment = new UserTimelineFragment();
-        Bundle args = new Bundle();
-        args.putString("screen_name", screen_name);
-        userTimelineFragment.setArguments(args);
-        return userTimelineFragment;
-    }
     // send an API request to get the timeline json
     //Fill the timeline by creating the tweet object from the json
     protected void populateTimeline() {
@@ -47,24 +47,7 @@ public class UserTimelineFragment extends TweetListsFragments{
                     @Override
                     public void onSuccess(int statusCode, Header[] headers, JSONArray json) {
                         Log.d(getClass().toString(), json.toString());
-                        //json here
-                        // desrialize json
-                        // create models and add them to adapter
-                        // load the model data into listview
-                        //databaseHelper.deleteAllPostsAndUsers();
-                        //databaseHelper.addAllPosts(Tweet.fromJsonArray(json));
-                        //tw = new ArrayList<Tweet>(databaseHelper.getAllPosts());
-                        //tweets = tw;
                         addAll(Tweet.fromJsonArray(json));
-                        // Log.d("DEBUG_TWeetSize", String.valueOf(tweets.size()));
-                        //int cnt = databaseHelper.getProfilesCount();
-                        //tweets.addAll(Tweet.fromJsonArray(json));
-                        //aTweets.clearData();
-                        //aTweets.notifyItemInserted(aTweets.getItemCount() - 1);
-                        //aTweets.notifyDataSetChanged();
-
-
-                        //               swipeContainer.setRefreshing(false);
                     }
 
                     @Override
@@ -76,43 +59,29 @@ public class UserTimelineFragment extends TweetListsFragments{
                     public void onUserException(Throwable error) {
                         super.onUserException(error);
                         Log.d("DEBUG: User ", error.toString());
-                        //                                       flag = true;
-                        //                                       //aTweets.notifyItemInserted(aTweets.getItemCount() - 1);
-                        //                                       aTweets.notifyDataSetChanged();
                         Toast.makeText(context, "Rate limit Exceeded", Toast.LENGTH_LONG).show();
                     }
                 }
         );
     }
+
     public void fetchTimelineAsync() {
         // Send the network request to fetch the updated data
         // `client` here is an instance of Android Async HTTP
         client.getUserTimeline(getArguments().getString("screen_name"),
-        new JsonHttpResponseHandler() {
-            @Override
-            public void onSuccess(int statusCode, Header[] headers, JSONArray json) {
-                // Remember to CLEAR OUT old items before appending in the new ones
-                //aTweets.clearData();
-                // ...the data has come back, add new items to your adapter...
-//                tweets.addAll(Tweet.fromJsonArray(json));
-//                //databaseHelper.deleteAllPostsAndUsers();
-//                //databaseHelper.deleteAllPostsAndUsers();
-//                databaseHelper.addAllPosts(Tweet.fromJsonArray(json));
-//                int cnt = databaseHelper.getProfilesCount();
-//                Log.d("DEBUG", "cnt" + String.valueOf(cnt));
-//                aTweets.notifyItemInserted(cnt - 1);
-//                aTweets.notifyDataSetChanged();
-                clearAll();
-                addAll(Tweet.fromJsonArray(json));
-                // Now we call setRefreshing(false) to signal refresh has finished
-                swipeContainer.setRefreshing(false);
-            }
+                new JsonHttpResponseHandler() {
+                    @Override
+                    public void onSuccess(int statusCode, Header[] headers, JSONArray json) {
+                        clearAll();
+                        addAll(Tweet.fromJsonArray(json));
+                        swipeContainer.setRefreshing(false);
+                    }
 
-            @Override
-            public void onFailure(int statusCode, Header[] headers, Throwable throwable, JSONObject errorResponse) {
-                Log.d("DEBUG", "Fetch timeline error: " + errorResponse.toString());
-            }
-        });
+                    @Override
+                    public void onFailure(int statusCode, Header[] headers, Throwable throwable, JSONObject errorResponse) {
+                        Log.d("DEBUG", "Fetch timeline error: " + errorResponse.toString());
+                    }
+                });
     }
 
 

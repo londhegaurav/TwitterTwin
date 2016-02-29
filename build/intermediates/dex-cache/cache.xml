@@ -2,158 +2,165 @@
 <items version="2" >
 
     <item
-        jar="/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/22.2.0/jars/classes.jar"
+        jar="/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/exploded-aar/uk.co.chrisjenx/calligraphy/2.1.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.0"
-        sha1="97f7e239e86ef994de894818fdd8a71d2e89d6aa">
-        <dex dex="/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/pre-dexed/debug/classes-558ba7591cdbfa99ef948dac4ef568cfb9392995.jar" />
+        sha1="e653e15e62e8a59ddd76cc7f827bf8bce38ae7bb">
+        <dex dex="/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/pre-dexed/debug/classes-b514d0082db826368fb05a9847db28a9cf5e9afb.jar" />
     </item>
     <item
         jar="/Users/glondhe/.gradle/caches/modules-2/files-2.1/org.parceler/parceler-api/1.0.4/4f7392b86e064f3f6da06977f54c21a48e6b6871/parceler-api-1.0.4.jar"
         jumboMode="false"
         revision="23.0.0"
         sha1="4f7392b86e064f3f6da06977f54c21a48e6b6871">
-        <dex dex="/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/pre-dexed/debug/parceler-api-1.0.4-c6aa35aac9ce5ad1c9664d708b1ee7bb10ca913e.jar" />
+        <dex dex="/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/pre-dexed/debug/parceler-api-1.0.4-c6aa35aac9ce5ad1c9664d708b1ee7bb10ca913e.jar" />
+    </item>
+    <item
+        jar="/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="09c5e804bc67fc0580360043dff067df574a60d4">
+        <dex dex="/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/pre-dexed/debug/classes-92f2d6962affbc79b4466b362b70bfaa45dc12d6.jar" />
     </item>
     <item
         jar="/Users/glondhe/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.5.2/ecf534dba3a8446ce84cbb797d314763be212a68/glide-3.5.2.jar"
         jumboMode="false"
         revision="23.0.0"
         sha1="ecf534dba3a8446ce84cbb797d314763be212a68">
-        <dex dex="/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/pre-dexed/debug/glide-3.5.2-9227bc98b41468f2e5483efc6e397a5569ee2762.jar" />
+        <dex dex="/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/pre-dexed/debug/glide-3.5.2-9227bc98b41468f2e5483efc6e397a5569ee2762.jar" />
     </item>
     <item
-        jar="/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/jars/classes.jar"
+        jar="/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/classes.jar"
         jumboMode="false"
         revision="23.0.0"
-        sha1="fc63b820d54c8a27a3a614bdd93920e0076581c2">
-        <dex dex="/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/pre-dexed/debug/classes-e5245f74cc503e299735fac5c0bee7d60ff726cc.jar" />
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/pre-dexed/debug/classes-d191c25c1e5784ff49e58edf2a85732859ecbad3.jar" />
     </item>
     <item
-        jar="/Users/glondhe/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.4/695b63d702f505b9b916e02272e3b6381bade7f/gson-2.4.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="0695b63d702f505b9b916e02272e3b6381bade7f">
-        <dex dex="/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/pre-dexed/debug/gson-2.4-85150c1c14b63ce3fcd2a32fe8fa06b09f66de29.jar" />
-    </item>
-    <item
-        jar="/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/libs/org.apache.http.legacy.jar"
+        jar="/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/libs/org.apache.http.legacy.jar"
         jumboMode="false"
         revision="23.0.0"
         sha1="fa331331b626ee78c52bea16ce1e34b39e666ce5">
-        <dex dex="/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/pre-dexed/debug/org.apache.http.legacy-d5e694673cd1c489a4ead2f74a10e540d3fc51a0.jar" />
-    </item>
-    <item
-        jar="/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/exploded-aar/com.astuetz/pagerslidingtabstrip/1.0.1/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="7912610ed96381c25c36d986eba422731b9641b6">
-        <dex dex="/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/pre-dexed/debug/classes-3906c0d27789cf09e6bbd70e8c95000f9b49a39d.jar" />
-    </item>
-    <item
-        jar="/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/exploded-aar/com.github.siyamed/android-shape-imageview/0.9.3/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="ee07783aa59eefdeacc107abf472f45f60272302">
-        <dex dex="/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/pre-dexed/debug/classes-dedb9125d874455152ef3d8c0c7156988fd362ef.jar" />
-    </item>
-    <item
-        jar="/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/libs/codepath-oauth-0.4.1.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="e2bf2d92cfe90d44287c510d955d0c979631e99e">
-        <dex dex="/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/pre-dexed/debug/codepath-oauth-0.4.1-12a7849c25e1da3c67b472827decb662cfb74bde.jar" />
+        <dex dex="/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/pre-dexed/debug/org.apache.http.legacy-e16c728c8aa3af62401923b110b08cef9483d739.jar" />
     </item>
     <item
         jar="/Users/glondhe/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife/7.0.1/d5d13ea991eab0252e3710e5df3d6a9d4b21d461/butterknife-7.0.1.jar"
         jumboMode="false"
         revision="23.0.0"
         sha1="d5d13ea991eab0252e3710e5df3d6a9d4b21d461">
-        <dex dex="/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/pre-dexed/debug/butterknife-7.0.1-761d5f440c5aaa8bdc74cd48aee6e22c9b13f3a5.jar" />
+        <dex dex="/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/pre-dexed/debug/butterknife-7.0.1-761d5f440c5aaa8bdc74cd48aee6e22c9b13f3a5.jar" />
+    </item>
+    <item
+        jar="/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/libs/codepath-utils.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="10901a5ef726eacf1b2443b7f38dc4cc9cd3f7d4">
+        <dex dex="/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/pre-dexed/debug/codepath-utils-e7c7ee71731a2428d58789b7dffe88a56b307f17.jar" />
     </item>
     <item
         jar="/Users/glondhe/.gradle/caches/modules-2/files-2.1/com.loopj.android/android-async-http/1.4.8/77bbfe240e437ecb396d982afa0d3bd4f9090ba7/android-async-http-1.4.8.jar"
         jumboMode="false"
         revision="23.0.0"
         sha1="77bbfe240e437ecb396d982afa0d3bd4f9090ba7">
-        <dex dex="/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/pre-dexed/debug/android-async-http-1.4.8-f5cf1fecf0e32babab9c7f599e9ad8aa14671a82.jar" />
+        <dex dex="/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/pre-dexed/debug/android-async-http-1.4.8-f5cf1fecf0e32babab9c7f599e9ad8aa14671a82.jar" />
     </item>
     <item
-        jar="/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/exploded-aar/com.daimajia.numberprogressbar/library/1.2/jars/classes.jar"
+        jar="/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/exploded-aar/com.github.ksoichiro/android-observablescrollview/1.5.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.0"
-        sha1="4196173ec5799ff211761f90874802789c6cc4ac">
-        <dex dex="/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/pre-dexed/debug/classes-d0a7b886a62715ef124c769feb5dd82585caab7d.jar" />
+        sha1="010ee9e87a286afcaeaed368dcf829e42d0aa2a0">
+        <dex dex="/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/pre-dexed/debug/classes-7c269240d4fd28da4c943d2c93af5bec8f7feed8.jar" />
     </item>
     <item
-        jar="/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/jars/classes.jar"
+        jar="/Users/glondhe/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.4/695b63d702f505b9b916e02272e3b6381bade7f/gson-2.4.jar"
         jumboMode="false"
         revision="23.0.0"
-        sha1="57ae0d750ff83f0c738d21720224ac7ea866a094">
-        <dex dex="/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/pre-dexed/debug/classes-4eb7e5a1250a44424a013214e481746c40bcbc78.jar" />
+        sha1="0695b63d702f505b9b916e02272e3b6381bade7f">
+        <dex dex="/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/pre-dexed/debug/gson-2.4-85150c1c14b63ce3fcd2a32fe8fa06b09f66de29.jar" />
     </item>
     <item
-        jar="/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/libs/internal_impl-23.1.1.jar"
+        jar="/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/exploded-aar/com.astuetz/pagerslidingtabstrip/1.0.1/jars/classes.jar"
         jumboMode="false"
         revision="23.0.0"
-        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
-        <dex dex="/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/pre-dexed/debug/internal_impl-23.1.1-c02476b4acd53e189653f844baadbe4315627ea1.jar" />
+        sha1="7912610ed96381c25c36d986eba422731b9641b6">
+        <dex dex="/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/pre-dexed/debug/classes-6f236962acdb61739cdde8dceb146d959866f1e5.jar" />
     </item>
     <item
         jar="/Users/glondhe/.gradle/caches/modules-2/files-2.1/com.michaelpardo/activeandroid/3.1.0-SNAPSHOT/4ab7b0182975bc57c49efc5e0b3baa4a10e4ec08/activeandroid-3.1.0-SNAPSHOT.jar"
         jumboMode="false"
         revision="23.0.0"
         sha1="4ab7b0182975bc57c49efc5e0b3baa4a10e4ec08">
-        <dex dex="/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/pre-dexed/debug/activeandroid-3.1.0-SNAPSHOT-5ca5b1994ef4835d2d12c1dc2e7c5ac23320d873.jar" />
+        <dex dex="/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/pre-dexed/debug/activeandroid-3.1.0-SNAPSHOT-5ca5b1994ef4835d2d12c1dc2e7c5ac23320d873.jar" />
     </item>
     <item
-        jar="/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/libs/scribe-codepath-0.0.3.jar"
+        jar="/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.0"
-        sha1="a580d06de954001f787e8d024bfcf931fe30bdda">
-        <dex dex="/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/pre-dexed/debug/scribe-codepath-0.0.3-f6a589bb0b35294bc4c6a02f16f458840c2208f4.jar" />
+        sha1="57ae0d750ff83f0c738d21720224ac7ea866a094">
+        <dex dex="/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/pre-dexed/debug/classes-7f470339876139e915aeb8f2e82f96e6768a2559.jar" />
+    </item>
+    <item
+        jar="/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/libs/codepath-oauth-0.4.1.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="e2bf2d92cfe90d44287c510d955d0c979631e99e">
+        <dex dex="/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/pre-dexed/debug/codepath-oauth-0.4.1-609bf8da61af194a906eab7243102d72f7c3ba34.jar" />
+    </item>
+    <item
+        jar="/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="fc63b820d54c8a27a3a614bdd93920e0076581c2">
+        <dex dex="/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/pre-dexed/debug/classes-1b8e2f2279bdec82854d95ed2b986b4cf1ca8971.jar" />
     </item>
     <item
         jar="/Users/glondhe/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
         jumboMode="false"
         revision="23.0.0"
         sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
-        <dex dex="/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/pre-dexed/debug/picasso-2.5.2-7ab3e146ff128499b2df4bdec305886419257868.jar" />
+        <dex dex="/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/pre-dexed/debug/picasso-2.5.2-7ab3e146ff128499b2df4bdec305886419257868.jar" />
     </item>
     <item
-        jar="/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/libs/codepath-utils.jar"
+        jar="/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/22.2.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.0"
-        sha1="10901a5ef726eacf1b2443b7f38dc4cc9cd3f7d4">
-        <dex dex="/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/pre-dexed/debug/codepath-utils-9748861f8608e29479c476f3dc76f7f9670755e4.jar" />
+        sha1="97f7e239e86ef994de894818fdd8a71d2e89d6aa">
+        <dex dex="/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/pre-dexed/debug/classes-715a70f6a73e48e6fdc19aa635d669efa0a4571c.jar" />
     </item>
     <item
-        jar="/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/classes.jar"
+        jar="/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/libs/scribe-codepath-0.0.3.jar"
         jumboMode="false"
         revision="23.0.0"
-        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
-        <dex dex="/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/pre-dexed/debug/classes-e3a317de260de87b38f481c9306ee2012b1cb469.jar" />
+        sha1="a580d06de954001f787e8d024bfcf931fe30bdda">
+        <dex dex="/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/pre-dexed/debug/scribe-codepath-0.0.3-c17ec97c9fc9b23b63f5bac255bfc8a7bc254798.jar" />
     </item>
     <item
-        jar="/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.1/jars/classes.jar"
+        jar="/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/exploded-aar/com.daimajia.numberprogressbar/library/1.2/jars/classes.jar"
         jumboMode="false"
         revision="23.0.0"
-        sha1="09c5e804bc67fc0580360043dff067df574a60d4">
-        <dex dex="/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/pre-dexed/debug/classes-540dd9eb5a41448536b42542fa3618368eb28d1c.jar" />
+        sha1="4196173ec5799ff211761f90874802789c6cc4ac">
+        <dex dex="/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/pre-dexed/debug/classes-af4033b86b111e2400b616efbad3a96eee0b9323.jar" />
+    </item>
+    <item
+        jar="/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/exploded-aar/com.github.siyamed/android-shape-imageview/0.9.3/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="ee07783aa59eefdeacc107abf472f45f60272302">
+        <dex dex="/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/pre-dexed/debug/classes-8eea113f98af223cf6fba97723964c8bdfee49b2.jar" />
+    </item>
+    <item
+        jar="/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/libs/internal_impl-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/pre-dexed/debug/internal_impl-23.1.1-70d831b183e84184d78914d708d08c043e16065d.jar" />
     </item>
     <item
         jar="/Users/glondhe/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.1/support-annotations-23.1.1.jar"
         jumboMode="false"
         revision="23.0.0"
         sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
-        <dex dex="/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/pre-dexed/debug/support-annotations-23.1.1-8d4b0ef63bd66efda5abc4e147b68cedcdb5b6ea.jar" />
-    </item>
-    <item
-        jar="/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/exploded-aar/com.github.ksoichiro/android-observablescrollview/1.5.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="010ee9e87a286afcaeaed368dcf829e42d0aa2a0">
-        <dex dex="/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/pre-dexed/debug/classes-a304c87d163b11cd271ab3abde448d95d7c6270a.jar" />
+        <dex dex="/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/pre-dexed/debug/support-annotations-23.1.1-8d4b0ef63bd66efda5abc4e147b68cedcdb5b6ea.jar" />
     </item>
 
 </items>

@@ -23,13 +23,15 @@ import com.codepath.apps.mysimpletweets.R;
 import com.codepath.apps.mysimpletweets.activity.TimeLineActivity;
 import com.codepath.apps.mysimpletweets.application.TwitterApplication;
 import com.codepath.apps.mysimpletweets.application.TwitterClient;
-import com.codepath.apps.mysimpletweets.interfaces.OnFiltersSaveListener;
 import com.codepath.apps.mysimpletweets.models.Tweet;
 import com.codepath.apps.mysimpletweets.models.User;
 import com.loopj.android.http.JsonHttpResponseHandler;
 
 import org.apache.http.Header;
 import org.json.JSONObject;
+
+import butterknife.Bind;
+import butterknife.ButterKnife;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -40,19 +42,16 @@ import org.json.JSONObject;
  * create an instance of this fragment.
  */
 public class ComposeTweetDailog extends DialogFragment {
- //   HomeTimelineFragment homeTimeLineFragment = new HomeTimelineFragment();
-    private EditText mEditText;
-    private TextView mTextView;
-    private TextView tvUsername;
-    private ImageView ivProfileImage2;
-    private TwitterClient client;
-    private OnFiltersSaveListener onFiltersSaveListener;
 
-    public ComposeTweetDailog() {
-        // Empty constructor is required for DialogFragment
-        // Make sure not to add arguments to the constructor
-        // Use `newInstance` instead as shown below
-    }
+    private TwitterClient client;
+    public ComposeTweetDailog() {}
+
+    @Bind(R.id.tvTweetSize) TextView mTextView;
+    @Bind(R.id.etComposeTweet) EditText mEditText;
+    @Bind(R.id.tvUsername) TextView tvUsername;
+    @Bind(R.id.ivProfileImage2) ImageView ivProfileImage2;
+    @Bind(R.id.ibTweetSubmit) Button btSave;
+    @Bind(R.id.ibCancel) ImageButton btCancel;
 
     public static ComposeTweetDailog newInstance(String title) {
         ComposeTweetDailog frag = new ComposeTweetDailog();
@@ -63,24 +62,19 @@ public class ComposeTweetDailog extends DialogFragment {
         return frag;
     }
 
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         Bundle bundle = this.getArguments();
+
         String myValue = bundle.getString("screenName");
         client = TwitterApplication.getRestClient();
 
         getDialog().getWindow().requestFeature(Window.FEATURE_NO_TITLE);
 
         View tweetView = inflater.inflate(R.layout.fragment_compose_tweet_dailog, container);
-        mTextView = (TextView) tweetView.findViewById(R.id.tvTweetSize);
-        mEditText = (EditText) tweetView.findViewById(R.id.etComposeTweet);
-        tvUsername = (TextView) tweetView.findViewById(R.id.tvUsername);
-        ivProfileImage2 = (ImageView) tweetView.findViewById(R.id.ivProfileImage2);
-
-        final Button btSave = (Button) tweetView.findViewById(R.id.ibTweetSubmit);
-        ImageButton btCancel = (ImageButton) tweetView.findViewById(R.id.ibCancel);
-
+        ButterKnife.bind(this, tweetView);
         getUserInfoAndSet();
 
         if(myValue!=null){
@@ -141,18 +135,9 @@ public class ComposeTweetDailog extends DialogFragment {
 
             @Override
             public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
+
                 Log.d(getClass().toString(), response.toString());
                 Tweet tweet = Tweet.fromJson(response);
-                Log.i("DEBUG body", tweet.body);
-               // homeTimeLineFragment.addFirst(response);
-//                tweets.add(0, tweet);
-//                databaseHelper.addPost(Tweet.fromJson(response));
-//                //aTweets.clearData();
-//                aTweets.notifyItemInserted(aTweets.getItemCount() - 1);
-//                aTweets.notifyDataSetChanged();
-//                ArrayList<Tweet> t = databaseHelper.getAllPosts();
-//                onFiltersSaveListener.onFiltersSave(tweet);
-
                 Intent intent = new Intent(getActivity(),TimeLineActivity.class);
                 tweet.addKey = "true";
                 intent.putExtra("tweet", tweet);

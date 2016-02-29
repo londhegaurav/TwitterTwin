@@ -1,9 +1,12 @@
 package com.codepath.apps.mysimpletweets.activity;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.text.util.Linkify;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -22,51 +25,66 @@ import com.loopj.android.http.JsonHttpResponseHandler;
 import org.apache.http.Header;
 import org.json.JSONObject;
 
+import java.util.regex.Pattern;
+
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
 
 public class ProfileActivity extends AppCompatActivity {
 
-    @Bind(R.id.tvFullName) TextView tvName;
-    @Bind(R.id.tvTagLine) TextView tvTagLine;
-    @Bind(R.id.tvFollowers) TextView tvFollowers;
-    @Bind(R.id.tvFollowing) TextView tvFollowing;
-    @Bind(R.id.ivProfileImage) ImageView ivProfileImage;
-    @Bind(R.id.ivCoverImage) ImageView ivCoverImage;
-    @Bind(R.id.tvScreenName) TextView tvScreenName;
+    @Bind(R.id.tvFullName)
+    TextView tvName;
+    @Bind(R.id.tvTagLine)
+    TextView tvTagLine;
+    @Bind(R.id.tvFollowers)
+    TextView tvFollowers;
+    @Bind(R.id.tvFollowing)
+    TextView tvFollowing;
+    @Bind(R.id.ivProfileImage)
+    ImageView ivProfileImage;
+    @Bind(R.id.ivCoverImage)
+    ImageView ivCoverImage;
+    @Bind(R.id.tvScreenName)
+    TextView tvScreenName;
 
     TwitterClient client;
     User user;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
         ButterKnife.bind(this);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setTitle("");
+        setSupportActionBar(toolbar);
         String screenName = getIntent().getStringExtra("screen_name");
         client = TwitterApplication.getRestClient();
         client.getUserInfo(screenName, new JsonHttpResponseHandler() {
-                @Override
-                public void onStart() {
-                    Log.d("DEBUG", "Request: " + super.getRequestURI().toString());
-                }
-                @Override
-                public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
+                    @Override
+                    public void onStart() {
+                        Log.d("DEBUG", "Request: " + super.getRequestURI().toString());
+                    }
 
-                    user = User.fromJSON(response);
-                    getSupportActionBar().setTitle(user.screenName);
-                    populateProfileHeader(user);
-                    Log.d("DEBUG", "Response: " + "Success: " + user.screenName);
+                    @Override
+                    public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
+
+                        user = User.fromJSON(response);
+                        getSupportActionBar().setTitle(user.screenName);
+                        populateProfileHeader(user);
+                        Log.d("DEBUG", "Response: " + "Success: " + user.screenName);
+                    }
+
+                    @Override
+                    public void onFailure(int statusCode, Header[] headers, String responseString, Throwable throwable) {
+                        Log.d("DEBUG", "Response: " + "Failure: " + responseString);
+                        Log.d(getClass().toString(), responseString.toString());
+                    }
                 }
-                @Override
-                public void onFailure(int statusCode, Header[] headers, String responseString, Throwable throwable) {
-                    Log.d("DEBUG", "Response: " + "Failure: " + responseString);
-                    Log.d(getClass().toString(), responseString.toString());
-                }
-            }
         );
 
-        if (savedInstanceState ==null) {
+        if (savedInstanceState == null) {
             UserTimelineFragment fragmentUserTimeline = UserTimelineFragment.newInstance(screenName);
             FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
             ft.replace(R.id.flContainer, fragmentUserTimeline);
@@ -76,16 +94,24 @@ public class ProfileActivity extends AppCompatActivity {
 
     private void populateProfileHeader(User user) {
         tvName.setText(user.getName());
+        tvName.setTypeface(Typeface.createFromAsset(getAssets(), "fonts/Gotham-Black(1).ttf"));
         tvTagLine.setText(user.tagLine);
         tvFollowers.setText(user.followersCount + " Followers");
         tvFollowing.setText(user.followingsCount + " Following");
+        tvFollowers.setTypeface(Typeface.createFromAsset(getAssets(), "fonts/Gotham-Black(1).ttf"));
+        tvFollowing.setTypeface(Typeface.createFromAsset(getAssets(), "fonts/Gotham-Black(1).ttf"));
+        tvFollowers.setTextSize(12);
+        tvFollowing.setTextSize(12);
         tvScreenName.setText("@" + user.screenName);
+        tvScreenName.setTypeface(Typeface.createFromAsset(getAssets(), "fonts/Gotham-Medium(1).ttf"));
+        Pattern httpPattern2 = Pattern.compile("@[^ \\n]*");
+        Linkify.addLinks(tvScreenName, httpPattern2, "");
         tvFollowers.setTag(user.screenName);
         tvFollowers.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(v.getContext(),FollowActivity.class);
-                i.putExtra("screen_name",tvFollowers.getTag().toString());
+                Intent i = new Intent(v.getContext(), FollowActivity.class);
+                i.putExtra("screen_name", tvFollowers.getTag().toString());
                 startActivity(i);
             }
         });

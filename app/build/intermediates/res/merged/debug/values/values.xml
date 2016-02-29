@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="http://schemas.android.com/tools">
-    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <integer-array name="androidcolors">
         <item>@color/blue</item>
@@ -16,12 +16,17 @@
         <item>@color/white</item>
         <item>@color/black</item>
     </integer-array>
-    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values/values.xml -->
+    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values/values.xml -->
     <eat-comment/>
     <attr format="reference" name="drawerArrowStyle"/>
+    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/exploded-aar/uk.co.chrisjenx/calligraphy/2.1.0/res/values/values.xml -->
+    <eat-comment/>
+    <attr format="string" name="fontPath"/>
+    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values/values.xml -->
+    <eat-comment/>
     <attr format="dimension" name="height"/>
     <attr format="boolean" name="isLightTheme"/>
-    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/exploded-aar/com.github.siyamed/android-shape-imageview/0.9.3/res/values/values.xml -->
+    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/exploded-aar/com.github.siyamed/android-shape-imageview/0.9.3/res/values/values.xml -->
     <eat-comment/>
     <attr name="siArrowPosition">
         <enum name="left" value="0"/>
@@ -41,7 +46,7 @@
         <enum name="miter" value="1"/>
         <enum name="round" value="2"/>
     </attr>
-    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values/values.xml -->
+    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values/values.xml -->
     <eat-comment/>
     <attr format="string" name="title"/>
     <bool name="abc_action_bar_embed_tabs">true</bool>
@@ -62,14 +67,14 @@
     <color name="background_floating_material_light">@android:color/white</color>
     <color name="background_material_dark">@color/material_grey_850</color>
     <color name="background_material_light">@color/material_grey_50</color>
-    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/exploded-aar/com.astuetz/pagerslidingtabstrip/1.0.1/res/values/values.xml -->
+    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/exploded-aar/com.astuetz/pagerslidingtabstrip/1.0.1/res/values/values.xml -->
     <eat-comment/>
     <color name="background_tab_pressed">#6633B5E5</color>
-    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <item name="black" type="color">#00000000</item>
     <item name="blue" type="color">#33A1C9</item>
-    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values/values.xml -->
+    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values/values.xml -->
     <eat-comment/>
     <color name="bright_foreground_disabled_material_dark">#80ffffff</color>
     <color name="bright_foreground_disabled_material_light">#80000000</color>
@@ -79,40 +84,40 @@
     <color name="bright_foreground_material_light">@android:color/black</color>
     <color name="button_material_dark">#ff5a595b</color>
     <color name="button_material_light">#ffd6d7d7</color>
-    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <color name="cardview_dark_background">#FF202020</color>
     <color name="cardview_light_background">#FFFAFAFA</color>
     <color name="cardview_shadow_end_color">#03000000</color>
     <color name="cardview_shadow_start_color">#37000000</color>
-    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <item name="darkblue" type="color">#FF0099CC</item>
     <item name="darkgreen" type="color">#FF669900</item>
     <item name="darkorange" type="color">#FFFF8800</item>
     <item name="darkpurple" type="color">#FF9933CC</item>
     <item name="darkred" type="color">#FFCC0000</item>
-    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values/values.xml -->
+    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values/values.xml -->
     <eat-comment/>
     <color name="dim_foreground_disabled_material_dark">#80bebebe</color>
     <color name="dim_foreground_disabled_material_light">#80323232</color>
     <color name="dim_foreground_material_dark">#ffbebebe</color>
     <color name="dim_foreground_material_light">#ff323232</color>
-    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <color name="error_color">#FFDD2C00</color>
     <color name="fab_stroke_end_inner_color">#0A000000</color>
     <color name="fab_stroke_end_outer_color">#0F000000</color>
     <color name="fab_stroke_top_inner_color">#1AFFFFFF</color>
     <color name="fab_stroke_top_outer_color">#2EFFFFFF</color>
-    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values/values.xml -->
+    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values/values.xml -->
     <eat-comment/>
     <color name="foreground_material_dark">@android:color/white</color>
     <color name="foreground_material_light">@android:color/black</color>
-    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <item name="green" type="color">#FF99CC00</item>
-    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values/values.xml -->
+    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values/values.xml -->
     <eat-comment/>
     <color name="highlighted_text_material_dark">#6680cbc4</color>
     <color name="highlighted_text_material_light">#66009688</color>
@@ -130,10 +135,10 @@
     <color name="material_grey_800">#ff424242</color>
     <color name="material_grey_850">#ff303030</color>
     <color name="material_grey_900">#ff212121</color>
-    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <item name="orange" type="color">#FFFFBB33</item>
-    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values/values.xml -->
+    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values/values.xml -->
     <eat-comment/>
     <color name="primary_dark_material_dark">@android:color/black</color>
     <color name="primary_dark_material_light">@color/material_grey_600</color>
@@ -143,11 +148,11 @@
     <color name="primary_text_default_material_light">#de000000</color>
     <color name="primary_text_disabled_material_dark">#4Dffffff</color>
     <color name="primary_text_disabled_material_light">#39000000</color>
-    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <item name="purple" type="color">#FFAA66CC</item>
     <item name="red" type="color">#FFFF4444</item>
-    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values/values.xml -->
+    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values/values.xml -->
     <eat-comment/>
     <color name="ripple_material_dark">#33ffffff</color>
     <color name="ripple_material_light">#1f000000</color>
@@ -155,19 +160,19 @@
     <color name="secondary_text_default_material_light">#8a000000</color>
     <color name="secondary_text_disabled_material_dark">#36ffffff</color>
     <color name="secondary_text_disabled_material_light">#24000000</color>
-    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <color name="shadow_end_color">@android:color/transparent</color>
     <color name="shadow_mid_color">#14000000</color>
     <color name="shadow_start_color">#44000000</color>
     <color name="snackbar_background_color">#323232</color>
-    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values/values.xml -->
+    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values/values.xml -->
     <eat-comment/>
     <color name="switch_thumb_disabled_material_dark">#ff616161</color>
     <color name="switch_thumb_disabled_material_light">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
-    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <item name="white" type="color">#FFFFFFFF</item>
     <declare-styleable name="ActionBar"><attr name="navigationMode"><enum name="normal" value="0"/><enum name="listMode" value="1"/><enum name="tabMode" value="2"/></attr><attr name="displayOptions"><flag name="none" value="0"/><flag name="useLogo" value="0x1"/><flag name="showHome" value="0x2"/><flag name="homeAsUp" value="0x4"/><flag name="showTitle" value="0x8"/><flag name="showCustom" value="0x10"/><flag name="disableHome" value="0x20"/></attr><attr name="title"/><attr format="string" name="subtitle"/><attr format="reference" name="titleTextStyle"/><attr format="reference" name="subtitleTextStyle"/><attr format="reference" name="icon"/><attr format="reference" name="logo"/><attr format="reference" name="divider"/><attr format="reference" name="background"/><attr format="reference|color" name="backgroundStacked"/><attr format="reference|color" name="backgroundSplit"/><attr format="reference" name="customNavigationLayout"/><attr name="height"/><attr format="reference" name="homeLayout"/><attr format="reference" name="progressBarStyle"/><attr format="reference" name="indeterminateProgressStyle"/><attr format="dimension" name="progressBarPadding"/><attr name="homeAsUpIndicator"/><attr format="dimension" name="itemPadding"/><attr format="boolean" name="hideOnContentScroll"/><attr format="dimension" name="contentInsetStart"/><attr format="dimension" name="contentInsetEnd"/><attr format="dimension" name="contentInsetLeft"/><attr format="dimension" name="contentInsetRight"/><attr format="dimension" name="elevation"/><attr format="reference" name="popupTheme"/></declare-styleable>
@@ -217,7 +222,7 @@
     <declare-styleable name="View"><attr format="dimension" name="paddingStart"/><attr format="dimension" name="paddingEnd"/><attr name="android:focusable"/><attr format="reference" name="theme"/><attr name="android:theme"/></declare-styleable>
     <declare-styleable name="ViewBackgroundHelper"><attr name="android:background"/><attr format="color" name="backgroundTint"/><attr name="backgroundTintMode"><enum name="src_over" value="3"/><enum name="src_in" value="5"/><enum name="src_atop" value="9"/><enum name="multiply" value="14"/><enum name="screen" value="15"/></attr></declare-styleable>
     <declare-styleable name="ViewStubCompat"><attr name="android:layout"/><attr name="android:inflatedId"/><attr name="android:id"/></declare-styleable>
-    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values/values.xml -->
+    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values/values.xml -->
     <eat-comment/>
     <dimen name="abc_action_bar_content_inset_material">16dp</dimen>
     <dimen name="abc_action_bar_default_height_material">56dp</dimen>
@@ -286,23 +291,23 @@
     <dimen name="abc_text_size_subtitle_material_toolbar">16dp</dimen>
     <dimen name="abc_text_size_title_material">20sp</dimen>
     <dimen name="abc_text_size_title_material_toolbar">20dp</dimen>
-    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <dimen name="appbar_elevation">4dp</dimen>
-    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <dimen name="cardview_compat_inset_shadow">1dp</dimen>
     <dimen name="cardview_default_elevation">2dp</dimen>
     <dimen name="cardview_default_radius">2dp</dimen>
-    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values/values.xml -->
+    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values/values.xml -->
     <eat-comment/>
     <item format="float" name="disabled_alpha_material_dark" type="dimen">0.30</item>
     <item format="float" name="disabled_alpha_material_light" type="dimen">0.26</item>
-    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <dimen name="fab_border_width">0.5dp</dimen>
     <dimen name="fab_content_size">24dp</dimen>
@@ -310,15 +315,15 @@
     <dimen name="fab_size_mini">40dp</dimen>
     <dimen name="fab_size_normal">56dp</dimen>
     <dimen name="fab_translation_z_pressed">6dp</dimen>
-    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values/values.xml -->
+    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values/values.xml -->
     <eat-comment/>
     <item format="float" name="highlight_alpha_material_colored" type="dimen">0.26</item>
     <item format="float" name="highlight_alpha_material_dark" type="dimen">0.20</item>
     <item format="float" name="highlight_alpha_material_light" type="dimen">0.12</item>
-    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <dimen name="item_touch_helper_max_drag_scroll_per_frame">20dp</dimen>
-    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <dimen name="navigation_elevation">12dp</dimen>
     <dimen name="navigation_icon_padding">32dp</dimen>
@@ -327,12 +332,12 @@
     <dimen name="navigation_padding_bottom">8dp</dimen>
     <dimen name="navigation_padding_top_default">0dp</dimen>
     <dimen name="navigation_separator_vertical_padding">8dp</dimen>
-    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values/values.xml -->
+    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values/values.xml -->
     <eat-comment/>
     <dimen name="notification_large_icon_height">64dp</dimen>
     <dimen name="notification_large_icon_width">64dp</dimen>
     <dimen name="notification_subtext_size">12dp</dimen>
-    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <dimen name="snackbar_action_inline_max_width">128dp</dimen>
     <dimen name="snackbar_background_corner_radius">0dp</dimen>
@@ -346,36 +351,41 @@
     <dimen name="snackbar_text_size">14sp</dimen>
     <dimen name="tab_max_width">264dp</dimen>
     <dimen name="tab_min_width">72dp</dimen>
-    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values/values.xml -->
+    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values/values.xml -->
     <eat-comment/>
     <drawable name="notification_template_icon_bg">#3333B5E5</drawable>
     <item name="action_bar_activity_content" type="id"/>
     <item name="action_bar_spinner" type="id"/>
     <item name="action_menu_divider" type="id"/>
     <item name="action_menu_presenter" type="id"/>
+    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/exploded-aar/uk.co.chrisjenx/calligraphy/2.1.0/res/values/values.xml -->
+    <eat-comment/>
+    <item name="calligraphy_tag_id" type="id"/>
+    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values/values.xml -->
+    <eat-comment/>
     <item name="home" type="id"/>
-    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <item name="item_touch_helper_previous_elevation" type="id"/>
-    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values/values.xml -->
+    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values/values.xml -->
     <eat-comment/>
     <item name="progress_circular" type="id"/>
     <item name="progress_horizontal" type="id"/>
     <item name="split_action_bar" type="id"/>
     <item name="up" type="id"/>
-    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <item name="view_offset_helper" type="id"/>
-    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values/values.xml -->
+    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values/values.xml -->
     <eat-comment/>
     <integer name="abc_config_activityDefaultDur">220</integer>
     <integer name="abc_config_activityShortDur">150</integer>
     <integer name="abc_max_action_buttons">2</integer>
     <integer name="cancel_button_image_alpha">127</integer>
-    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <integer name="snackbar_text_max_lines">2</integer>
-    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values/values.xml -->
+    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values/values.xml -->
     <eat-comment/>
     <integer name="status_bar_notification_info_maxnum">999</integer>
     <string name="abc_action_bar_home_description">Navigate home</string>
@@ -397,36 +407,36 @@
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
-    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="action_settings">Settings</string>
     <string name="app_name">SimpleTweets</string>
-    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
-    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="detail_activity">TwitterClient</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hello_world">Hello world!</string>
     <string name="login_label">Connect with Twitter</string>
-    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values/values.xml -->
+    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values/values.xml -->
     <eat-comment/>
     <string name="status_bar_notification_info_overflow">999+</string>
-    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="title_activity_profile">ProfileActivity</string>
     <string name="title_activity_time_line">Home Timeline</string>
-    <string name="title_activity_timeline">Home Timeline</string>
-    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values/values.xml -->
+    <string name="title_activity_timeline">TwitterTwin</string>
+    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values/values.xml -->
     <eat-comment/>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>
     <style name="Animation.AppCompat.DropDownUp" parent="Base.Animation.AppCompat.DropDownUp"/>
-    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/src/main/res/values/styles.xml -->
     <eat-comment/>
-    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!--
             Theme customizations available in newer API levels can go in
             res/values-vXX/styles.xml, while customizations related to
@@ -435,8 +445,9 @@
     </style>
     <style name="AppTheme" parent="AppBaseTheme">
      <item name="android:colorPrimaryDark" ns1:targetApi="lollipop">#4682B4</item>
+        <item name="android:src">@drawable/twitterlogo</item>
     </style>
-    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values/values.xml -->
+    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values/values.xml -->
     <eat-comment/>
     <style name="Base.AlertDialog.AppCompat" parent="android:Widget">
         <item name="android:layout">@layout/abc_alert_dialog_material</item>
@@ -1373,7 +1384,7 @@
         <item name="android:minWidth">56dp</item>
         <item name="android:scaleType">center</item>
     </style>
-    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <style name="Base.Widget.Design.TabLayout" parent="android:Widget">
         <item name="tabMaxWidth">@dimen/tab_max_width</item>
@@ -1385,7 +1396,7 @@
         <item name="tabTextAppearance">@style/TextAppearance.Design.Tab</item>
         <item name="tabSelectedTextColor">?android:textColorPrimary</item>
     </style>
-    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <style name="CardView">
         <item name="cardBackgroundColor">@color/cardview_light_background</item>
@@ -1401,7 +1412,7 @@
     <style name="CardView.Light">
         <item name="cardBackgroundColor">@color/cardview_light_background</item>
     </style>
-    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/exploded-aar/com.daimajia.numberprogressbar/library/1.2/res/values/values.xml -->
+    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/exploded-aar/com.daimajia.numberprogressbar/library/1.2/res/values/values.xml -->
     <eat-comment/>
     <style name="NumberProgressBar_Beauty_Red">
         <item name="android:layout_height">wrap_content</item>
@@ -1499,7 +1510,7 @@
         <item name="progress_reached_bar_height">1.5dp</item>
         <item name="progress_unreached_bar_height">0.75dp</item>
     </style>
-    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values/values.xml -->
+    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values/values.xml -->
     <eat-comment/>
     <style name="Platform.AppCompat" parent="android:Theme">
         <item name="android:windowNoTitle">true</item>
@@ -1701,7 +1712,7 @@
     </style>
     <style name="TextAppearance.AppCompat.Widget.Switch" parent="Base.TextAppearance.AppCompat.Widget.Switch"/>
     <style name="TextAppearance.AppCompat.Widget.TextView.SpinnerItem" parent="Base.TextAppearance.AppCompat.Widget.TextView.SpinnerItem"/>
-    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <style name="TextAppearance.Design.Error" parent="TextAppearance.AppCompat.Caption">
         <item name="android:textColor">@color/error_color</item>
@@ -1721,7 +1732,7 @@
         <item name="android:textColor">?android:textColorSecondary</item>
         <item name="textAllCaps">true</item>
     </style>
-    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values/values.xml -->
+    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values/values.xml -->
     <eat-comment/>
     <style name="TextAppearance.StatusBar.EventContent" parent=""/>
     <style name="TextAppearance.StatusBar.EventContent.Info" parent=""/>
@@ -1854,7 +1865,7 @@
     <style name="Widget.AppCompat.TextView.SpinnerItem" parent="Base.Widget.AppCompat.TextView.SpinnerItem"/>
     <style name="Widget.AppCompat.Toolbar" parent="Base.Widget.AppCompat.Toolbar"/>
     <style name="Widget.AppCompat.Toolbar.Button.Navigation" parent="Base.Widget.AppCompat.Toolbar.Button.Navigation"/>
-    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <style name="Widget.Design.AppBarLayout" parent="android:Widget">
         <item name="elevation">@dimen/appbar_elevation</item>
@@ -1906,7 +1917,7 @@
         <item name="hintTextAppearance">@style/TextAppearance.Design.Hint</item>
         <item name="errorTextAppearance">@style/TextAppearance.Design.Error</item>
     </style>
-    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="myDialog" parent="android:Theme.Dialog">
         <item name="android:colorForeground">#f0f0</item>

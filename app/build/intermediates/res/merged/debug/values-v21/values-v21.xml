@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values-v21/values-v21.xml -->
+    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values-v21/values-v21.xml -->
     <eat-comment/>
     <dimen name="navigation_padding_top_default">24dp</dimen>
-    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/src/main/res/values-v21/styles.xml -->
+    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/src/main/res/values-v21/styles.xml -->
     <eat-comment/>
     <style name="AppTheme" parent="AppBaseTheme">
         <item name="android:colorPrimaryDark">#00688B</item>
-        <item name="android:windowActionBarOverlay">true</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="colorPrimary">#2196F3</item>
+        <item name="colorAccent">#FF4081</item>
     </style>
-    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml -->
+    <!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml -->
     <eat-comment/>
     <style name="Base.TextAppearance.AppCompat" parent="android:TextAppearance.Material"/>
     <style name="Base.TextAppearance.AppCompat.Body1" parent="android:TextAppearance.Material.Body1"/>

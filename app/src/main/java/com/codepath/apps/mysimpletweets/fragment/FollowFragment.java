@@ -1,5 +1,3 @@
-
-
 package com.codepath.apps.mysimpletweets.fragment;
 
 import android.content.Context;
@@ -8,9 +6,7 @@ import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
 import android.support.v4.widget.SwipeRefreshLayout;
-import android.support.v7.app.ActionBar;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -19,13 +15,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import com.codepath.apps.mysimpletweets.DB.PostsDatabaseHelper;
 import com.codepath.apps.mysimpletweets.R;
-import com.codepath.apps.mysimpletweets.adapter.followRecycleAdapter;
+import com.codepath.apps.mysimpletweets.adapter.FollowRecycleAdapter;
 import com.codepath.apps.mysimpletweets.filter.EndlessRecyclerViewScrollListener;
 import com.codepath.apps.mysimpletweets.models.User;
-
-import org.json.JSONObject;
 
 import java.util.ArrayList;
 
@@ -41,20 +34,10 @@ public abstract class FollowFragment extends Fragment {
     RecyclerView rvTimelineGridFollow;
     @Bind(R.id.swipeContainerFollow)
     SwipeRefreshLayout swipeContainerFollow;
-//    @Bind(R.id.ivProfileImageDetail) ImageView ivProfileImageDetail;
-
-    private ArrayList<User> users = null;
-    private ArrayList<User> tw;
-    private followRecycleAdapter aTweets = null;
-    private RecyclerView rvTweets;
-    private String tweetText;
-    private JSONObject jsonTweet;
-    private ActionBar actionBar;
-    private PostsDatabaseHelper databaseHelper;
-    private boolean flag = false;
-    private FragmentManager fm;
-
     Context context;
+    private ArrayList<User> users = null;
+    private FollowRecycleAdapter aTweets = null;
+    private RecyclerView rvTweets;
 
     @Nullable
     @Override
@@ -63,10 +46,9 @@ public abstract class FollowFragment extends Fragment {
         this.context = getContext();
 
 
-        View v = inflater.inflate(R.layout.follow_list,parent, false);
+        View v = inflater.inflate(R.layout.follow_list, parent, false);
         ButterKnife.bind(this, v);
         rvTweets = rvTimelineGridFollow;
-        // rvTweets = (RecyclerView) v.findViewById(R.id.rvTimelineGrid);
 
         rvTweets.setAdapter(aTweets);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity());
@@ -94,10 +76,8 @@ public abstract class FollowFragment extends Fragment {
                     Toast.makeText(getActivity(), "Please check your Internet connectivity.", Toast.LENGTH_LONG).show();
                     swipeContainerFollow.setRefreshing(false);
                 } else {
-//                    actionBar.hide();
                     Log.d("DEBUG", "Calling Refresh");
                     fetchTimelineAsync();
-//                    actionBar.show();
                 }
             }
         });
@@ -116,43 +96,14 @@ public abstract class FollowFragment extends Fragment {
     protected abstract void fetchTimelineAsync();
 
     @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-//        if(getActivity().toString().equalsIgnoreCase("TimeLineActivity")) {
-//            Bundle b = getArguments();
-//            if (b != null) {
-//                Log.d("DEBUG", b.size() + "");
-//                Tweet t = b.getParcelable("tweet");
-//                Log.d("DEBUG", "Got arraylist");
-//
-//                if (t.addKey.toString().equalsIgnoreCase("true"))
-//                    addFirst(t);
-//            } else {
-//                Log.d("DEBUG", "Null");
-//            }
-//        }
-    }
-
-    @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         users = new ArrayList<>();
-        fm = getActivity().getSupportFragmentManager();
-        //   actionBar = getSupportActionBar();
-        //   setActionBar();
-        // databaseHelper = PostsDatabaseHelper.getInstance(getActivity());
-        if (!isNetworkAvailable()) {
+        if (!isNetworkAvailable())
             Toast.makeText(getActivity(), "Please check your Internet connectivity.", Toast.LENGTH_LONG).show();
-            flag = true;
-        }
-        if (flag == true)
-            aTweets = new followRecycleAdapter(getActivity(), users, true, fm );
         else
-            aTweets = new followRecycleAdapter(getActivity(), users, false, fm);
-
+            aTweets = new FollowRecycleAdapter(getActivity(), users);
     }
-
-
 
     public Boolean isNetworkAvailable() {
         ConnectivityManager connectivityManager
@@ -161,21 +112,8 @@ public abstract class FollowFragment extends Fragment {
         return activeNetworkInfo != null && activeNetworkInfo.isConnected();
     }
 
-//    @Override
-//    public void onFiltersSave(Tweet tweet) {
-//        Log.i("DEBUG body", tweet.body);
-//
-//
-//        addFirst(tweet);
-//        //    homeTimeLineFragment.addFirst(tweet);
-//        Log.i("DEBUG", "beforefromjson");
-//
-//        //Toast.makeText(this, "new tweet" + this.tweetText, Toast.LENGTH_LONG).show();
-//    }
 
-
-
-    public void addAll(ArrayList<User> usr){
+    public void addAll(ArrayList<User> usr) {
         Log.i("DEBUG bodyall", String.valueOf(aTweets.getItemCount()));
         Log.i("DEBUG bodyall", String.valueOf(usr.get(0)));
 
@@ -184,26 +122,9 @@ public abstract class FollowFragment extends Fragment {
         aTweets.notifyDataSetChanged();
     }
 
-    public void clearAll(){
+    public void clearAll() {
         aTweets.clearData();
     }
 
-    public void addFirst(User user){
-
-        // Log.i("DEBUG Tweet", String.valueOf(tweets.indexOf(0)));
-//        Log.i("DEBUG jsonstring", json.toString());
-//        Tweet tweet = Tweet.fromJson(json);
-        //   tweets = new ArrayList<>();
-        Log.i("DEBUG body2", user.screenName);
-//        aTweets.onViewAttachedToWindow().insert()
-        try {
-            users.add(0, user);
-        }catch (Exception e){
-            Log.d(getClass().toString(),e.toString());
-        }
-
-        aTweets.notifyItemInserted(aTweets.getItemCount() - 1);
-        aTweets.notifyDataSetChanged();
-    }
 }
 

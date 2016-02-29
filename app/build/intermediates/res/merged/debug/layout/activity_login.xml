@@ -1,3 +1,17 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!-- Toolbar -->
+        <include layout="@layout/toolbar" />
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
@@ -18,4 +32,6 @@
         android:onClick="loginToRest"
         android:text="@string/login_label" />
 
-</RelativeLayout><!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/src/main/res/layout/activity_login.xml -->
+</RelativeLayout>
+    </LinearLayout>
+        </android.support.design.widget.CoordinatorLayout><!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/src/main/res/layout/activity_login.xml -->

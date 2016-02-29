@@ -41,28 +41,12 @@ public class MentionsTimelineFragment extends TweetListsFragments {
                                        @Override
                                        public void onSuccess(int statusCode, Header[] headers, JSONArray json) {
                                            Log.d(getClass().toString(), json.toString());
-                                           //json here
-                                           // desrialize json
-                                           // create models and add them to adapter
-                                           // load the model data into listview
-                                           //databaseHelper.deleteAllPostsAndUsers();
-                                           //databaseHelper.addAllPosts(Tweet.fromJsonArray(json));
-                                           //tw = new ArrayList<Tweet>(databaseHelper.getAllPosts());
-                                           //tweets = tw;
                                            addAll(Tweet.fromJsonArray(json));
-                                           // Log.d("DEBUG_TWeetSize", String.valueOf(tweets.size()));
-                                           //int cnt = databaseHelper.getProfilesCount();
-                                           //tweets.addAll(Tweet.fromJsonArray(json));
-                                           //aTweets.clearData();
-                                           //aTweets.notifyItemInserted(aTweets.getItemCount() - 1);
-                                           //aTweets.notifyDataSetChanged();
-
-
-                                           //               swipeContainer.setRefreshing(false);
                                        }
 
                                        @Override
                                        public void onFailure(int statusCode, Header[] headers, Throwable throwable, JSONObject errorResponse) {
+                                           Log.d(getClass().toString(), errorResponse.toString());
                                            Log.d("DEBUG: On failure ", errorResponse.toString());
                                        }
 
@@ -70,31 +54,16 @@ public class MentionsTimelineFragment extends TweetListsFragments {
                                        public void onUserException(Throwable error) {
                                            super.onUserException(error);
                                            Log.d("DEBUG: User ", error.toString());
-                                           //                                       flag = true;
-                                           //                                       //aTweets.notifyItemInserted(aTweets.getItemCount() - 1);
-                                           //                                       aTweets.notifyDataSetChanged();
                                            Toast.makeText(context, "Rate limit Exceeded", Toast.LENGTH_LONG).show();
                                        }
                                    }
         );
     }
+
     public void fetchTimelineAsync() {
-        // Send the network request to fetch the updated data
-        // `client` here is an instance of Android Async HTTP
         client.getMentionsTimeline(new JsonHttpResponseHandler() {
             @Override
             public void onSuccess(int statusCode, Header[] headers, JSONArray json) {
-                // Remember to CLEAR OUT old items before appending in the new ones
-                //aTweets.clearData();
-                // ...the data has come back, add new items to your adapter...
-//                tweets.addAll(Tweet.fromJsonArray(json));
-//                //databaseHelper.deleteAllPostsAndUsers();
-//                //databaseHelper.deleteAllPostsAndUsers();
-//                databaseHelper.addAllPosts(Tweet.fromJsonArray(json));
-//                int cnt = databaseHelper.getProfilesCount();
-//                Log.d("DEBUG", "cnt" + String.valueOf(cnt));
-//                aTweets.notifyItemInserted(cnt - 1);
-//                aTweets.notifyDataSetChanged();
                 clearAll();
                 addAll(Tweet.fromJsonArray(json));
                 // Now we call setRefreshing(false) to signal refresh has finished

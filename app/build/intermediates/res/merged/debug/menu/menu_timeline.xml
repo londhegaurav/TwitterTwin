@@ -13,7 +13,7 @@
         ></item>
 
     <item android:id="@+id/componseTweet"
-        android:icon="@drawable/composetweetimg"
+        android:icon="@drawable/composetwt"
         app:showAsAction="always"
         android:orderInCategory="1"
         android:title="Tweet"
@@ -34,4 +34,4 @@
         />
 
 </menu>
-<!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterClient/app/src/main/res/menu/menu_timeline.xml -->
+<!-- From: file:/Users/glondhe/Desktop/AndriodProjects/TwitterTwin/app/src/main/res/menu/menu_timeline.xml -->
